@@ -5,7 +5,8 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-app.post('api/users/:id/update', (req, res) => {
+
+app.post('/api/users/:id/update', (req, res) => {
   setTimeout(() => {
     res.send(req.body);
   }, [2000]);
